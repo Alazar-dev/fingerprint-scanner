@@ -1,0 +1,22 @@
+{
+  "name": "fingerprint-module",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Capture fingerprint from IB manufactured devices",
+  "main": "index.ts",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "js",
+    "ts",
+    "fingerprint",
+    "capture"
+  ],
+  "author": "Alazar-dev",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.7"
+  }
+}
