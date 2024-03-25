@@ -8,6 +8,5 @@ export default async function fingerprint() {
     const fingerprintDevicePort = await findPort();
     stream({ fingerprintDevicePort });
     const data = await capture({ fingerprintDevicePort });
-    console.log("data is", data);
     return data;
 }
