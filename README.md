@@ -10,10 +10,10 @@
 
 ```
 //import 
-import main from 'fingerprint-module'
+import fingerprint from 'fingerprint-module'
 
 //call the main function
-main()
+fingerprint()
 ```
 
 
