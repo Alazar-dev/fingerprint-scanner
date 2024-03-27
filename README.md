@@ -1,19 +1,36 @@
-# Capture fingerprint
+# fingerprint-scanner
 
-## Steps to follow
-1. npm install or yarn add
-2. Add your **config.js** file in the root of your project
-3. Inside your 'config.js.' file. add your config variables based on [MDS Specification](https://docs.mosip.io/1.1.5/biometrics/mosip-device-service-specification)
-4. import main and start using
+## Installation
 
-## usage
-
+In a node.js environment:
 ```
-//import 
-import fingerprint from 'fingerprint-module'
-
-//call the main function
-fingerprint()
+npm i fingerprint-scanner
 ```
 
+## Usage
 
+```
+import fingerprint from 'fingerprint-scanner'
+
+const data = fingerprint();
+
+// if successful, data will be returned in a base64 format
+```
+### To do it manually:
+    import { findPort, stream, capture } from 'fingerprint scanner';
+
+    const devicePort = findPort();
+
+    async function scan({devicePort}) {
+        stream();
+        await data = capture({devicePort});
+        return data;
+    }
+
+## Why?
+
+fingerprint-scanner makes streaming and capturing fingerprint easier for JavaScript developers by taking the hassle out of working with finding device port streaming and capturing.
+
+ * Finds available port which the fingerprint SDK is currently running.
+ * Stream fingerprint and makes available for caputure (it helps to visualize the streaming).
+ * Captures and returns fingerprint data in a base64 format.

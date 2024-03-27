@@ -1,18 +1,11 @@
 {
-  "name": "fingerprint-module",
+  "name": "fingerprint-scanner",
   "type": "module",
   "version": "1.0.10",
   "repository": {
     "type": "git",
     "url": "https://github.com/Alazar-dev/fingerprint-module"
   },
-  "contributors": [
-    {
-      "name": "Elul-Asfaha",
-      "email": "scorpiondota22@gmail.com",
-      "url": "https://github.com/Elul-Asfaha"
-    }
-  ],
   "description": "Capture fingerprint from IB manufactured devices",
   "main": "index.ts",
   "scripts": {
