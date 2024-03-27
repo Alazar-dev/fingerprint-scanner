@@ -21,8 +21,8 @@ const data = fingerprint();
 
     const devicePort = findPort();
 
-    async function scan({devicePort}) {
-        stream();
+    async function scan() {
+        stream({devicePort});
         await data = capture({devicePort});
         return data;
     }
