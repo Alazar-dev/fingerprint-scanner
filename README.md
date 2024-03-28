@@ -1,6 +1,15 @@
 # fingerprint-scanner
+## Why?
 
-fingerprint-scanner aims to ease the husstle to fetch fingerprint data from any fingerprint scanning devices, more specifically from devices manufactured by [Integrated Biometrics](https://www.biometricsupply.com/).
+fingerprint-scanner makes streaming and capturing fingerprint easier for JavaScript developers by taking the hassle out of working with finding device port streaming and capturing.
+
+ * Finds available port which the fingerprint SDK is currently running.
+ * Stream fingerprint and makes available for caputure (it helps to visualize the streaming).
+ * Captures and returns fingerprint data in a base64 format.
+
+ * More details are available here: [MDS-Specification](https://docs.mosip.io/1.1.5/biometrics/mosip-device-service-specification) 
+ <br>
+ <br>
 
 ## Installation
 
@@ -8,6 +17,7 @@ In a node.js environment:
 ```
 npm i fingerprint-scanner
 ```
+<br>
 
 ## Usage
 
@@ -93,6 +103,8 @@ const data = fingerprint();
 
 ```
 
+So the ``
+
 
 ### To do it manually:
     import { findPort, stream, capture } from 'fingerprint scanner';
@@ -104,13 +116,3 @@ const data = fingerprint();
         await data = capture({devicePort});
         return data;
     }
-
-## Why?
-
-fingerprint-scanner makes streaming and capturing fingerprint easier for JavaScript developers by taking the hassle out of working with finding device port streaming and capturing.
-
- * Finds available port which the fingerprint SDK is currently running.
- * Stream fingerprint and makes available for caputure (it helps to visualize the streaming).
- * Captures and returns fingerprint data in a base64 format.
-
- * More details are available here: [MDS-Specification](https://docs.mosip.io/1.1.5/biometrics/mosip-device-service-specification)
